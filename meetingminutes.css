@@ -1,0 +1,123 @@
+h1{
+    font-size: 6vh;
+}
+@font-face {
+    font-family: andada;
+    src: url(AndadaPro-VariableFont_wght.ttf);
+}
+#entire_page{
+    text-align: center;
+    color: gray;
+}
+h2,h3,h4{
+    padding:2mm;
+    color: hsl(0,0%,30%);
+    font-size: 4vh;
+    margin:auto;
+    font-family: andada;
+}
+h2{
+    text-decoration: underline;
+}
+.small_header{
+    font-size: 3vh;
+}
+nav{
+    margin:auto;
+    height: 5cm;
+    width: 7cm;
+    max-width: 10cm;
+    min-width: 5cm;
+}
+ol{
+    margin:auto;
+    padding:1cm 1cm 1cm 1cm;
+}
+
+.flexcontainer{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flexcontainer>div{
+    color: rgb(180, 180, 180);
+    padding:2mm;
+    background: rgb(40, 40, 40);
+    border: 1px solid black;
+    flex-basis: 30%;
+}
+@media all and (min-width: 700px)
+{
+    .gridcontiner{
+        display: grid;
+        grid-template-columns: 35% 25% 40%;
+        grid-gap:1em;
+    }
+}
+
+.gridcontiner>div{
+    background: rgb(40, 40, 40);
+}
+ul.comment_list{
+    text-align: left;
+    margin:1cm 20vw 1cm 20vw;
+    padding:0.5cm 1cm 0.5cm 1cm;
+    border: 3px solid rgb(75, 63, 182);
+}
+.comment_list>li li{
+    list-style-type: disc;
+}
+
+details{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    padding-top: 1ex;
+    padding-bottom: 1ex;
+    padding-left: 1cm;
+    padding-right: 1cm;
+    border-style: solid;
+    border-color: #4c4dff;
+    border-width: 0.5mm;
+    border-radius: 1cm;
+}
+.due_day{
+    color:yellow;
+    position: fixed;
+    top: 0cm;
+    right: 0cm;
+}
+.date{
+    color:gray;
+    position: absolute;
+    top: 0cm;
+    left: 0cm;
+}
+.inline{
+    display:inline;
+}
+a:link{
+    color:orange;
+}
+a:hover{
+    color:green;
+}
+a:active{
+    color:greenyellow;
+}
+a[target]{
+    color:blue;
+}
+/* seems like already is block */
+.block{
+    display:block;
+}
+li~li{
+    font-size: 0.9em;
+}
+img+p{
+    font-size: 0.5em;
+}
