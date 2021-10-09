@@ -4,75 +4,97 @@
         <meta name="description" content="Meeting Minutes for a meeting">
         <title>Meeting Minutes</title>
         <link rel="icon" href="Face-smile.png">
+        <link rel="stylesheet" href="meetingminutes.css">
+        <style>
+            body{
+                background-color: rgb(20, 20, 20);
+            }
+        </style>
     </head>
     <body>
-        <header>
-            <h1>Meeting Minutes</h1>
-            <nav>
-                <ol>
-                    <li><a href="#meeting_info">Meeting Information</a></li>
-                    <li><a href="#agenda">Agenda</a></li>
-                    <li><a href="#unfinished_business">Unfinished Business</a></li>
-                    <li><a href="#new_business">New Business</a></li>
-                    <li><a href="#comments">Comments</a></li>
-                </ol>
-            </nav>
-        </header>
-        <main>
-            <section>
-                <h2 id="meeting_info">Meetring Information</h2>
+        <div id="entire_page">
+            <header>
+                <h1 style="color:hsl(0,0%,30%);">Meeting Minutes</h1>
+                <nav>
+                    <ol>
+                        <li id="block"><a href="#meeting_info">Meeting Information</a></li>
+                        <li id="block"><a href="#agenda">Agenda</a></li>
+                        <li id="block"><a href="#unfinished_business">Unfinished Business</a></li>
+                        <li id="block"><a href="#new_business">New Business</a></li>
+                        <li id="block"><a href="#comments">Comments</a></li>
+                    </ol>
+                </nav>
+            </header>
+            <main>
                 <section>
-                    <h3>Topic</h3>
-                    <p>How to make a Meeting Minutes</p>
+                    <h2 id="meeting_info">Meetring Information</h2>
+                    <section>
+                        <h3 class="small_header">Topic</h3>
+                        <p>How to make a Meeting Minutes</p>
+                    </section>
+                    <div>
+                        <h3 class="small_header">Attendance List</h3>
+                        <ul>
+                            <li class="inline">Me</li>
+                            <li class="inline">You</li>
+                            <li class="inline">Him</li>
+                        </ul>
+                    </div>
                 </section>
+                <hr>
                 <section>
-                    <h3>Date</h3>
-                    <p>2021/10/01</p>
+                    <h2 id="agenda">Agenda</h2>
+                    <div class="flexcontainer">
+                        <div class="one">How to get start</div>
+                        <div class="two">How to continue</div>
+                        <div class="three">How to finish</div>
+                    </div>
                 </section>
+                <hr>
                 <section>
-                    <h3>Attendance List</h3>
-                    <ul>
-                        <li>Me</li>
-                        <li>You</li>
-                        <li>Him</li>
-                    </ul>
+                    <h2 id="unfinished_business">Unfinished Business</h2>
+                    <p>Download <span>VS</span></p>
                 </section>
-            </section>
-            <hr>
-            <section>
-                <h2 id="agenda">Agenda</h2>
+                <hr>
+                <section>
+                    <h2 id="new_business">New Business</h2>
+                    <div class="gridcontiner">
+                        <div>Watch Html Turtorial</div>
+                        <div>Learn about CSS</div>
+                        <div><strong>Google</strong> How to write <b>Html</b></div>
+                        <div><em>Ask</em> question on <i>Slack</i></div>
+                </section>
+                <hr>
                 <div>
-                    <p>How to get start</p>
-                    <p>How to continue</p>
-                    <p>How to finish</p>
+                    <h2 id="comments">Comments</h2>
+                    <ul class="comment_list">
+                        <li>
+                            very important
+                            <ul>
+                                <li>need to meet groupmates</li>
+                                <li>talk to them</li>
+                                <li>talk to manager</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <details>
+                        <summary>
+                            Where should I go for download VS
+                        </summary>
+                        <a href="https://visualstudio.microsoft.com/" target="vsc">Visual Studio</a>
+                    </details>
                 </div>
-            </section>
-            <hr>
-            <section>
-                <h2 id="unfinished_business">Unfinished Business</h2>
-                <p>Download <span>VS</span></p>
-            </section>
-            <hr>
-            <section>
-                <h2 id="new_business">New Business</h2>
-                <p>Watch Html Turtorial</p>
-                <p><strong>Google</strong> How to write <b>Html</b></p>
-                <p><em>Ask</em> question on <i>Slack</i></p>
-            </section>
-            <hr>
-            <section>
-                <h2 id="comments">Comments</h2>
-                <p>The due day is comming up soon<br>We better start it now</p>
-                <details>
-                    <summary>
-                        Where should I go for download VS
-                    </summary>
-                    <a href="https://visualstudio.microsoft.com/">Visual Studio</a>
-                </details>
-            </section>
-            <hr>
-            <img src="Meeting.png" width="300" alt="Why am I in this meeting">
-        </main>
+                <hr>
+                <img src="Meeting.png" width="300" alt="Why am I in this meeting">
+                <p>No body love meetings</p>
+            </main>
+        </div>
+        <div class="date">
+            <p>Date:2021/10/01</p>
+        </div>
+        <div class="due_day">
+            The due day is today!!
+        </div>
         <footer>
             <audio controls>
                 <source src="firework.mp3" type="audio/mpeg">
