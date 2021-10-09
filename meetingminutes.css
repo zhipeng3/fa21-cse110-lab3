@@ -115,3 +115,9 @@ a[target]{
 .block{
     display:block;
 }
+li~li{
+    font-size: 0.9em;
+}
+img+p{
+    font-size: 0.5em;
+}
